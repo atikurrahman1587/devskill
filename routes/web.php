@@ -8,7 +8,7 @@ Route::get('/', function (){
     if (auth()->check()) {
         return redirect()->route('dashboard');
     }else{
-        return redirect()->route('login.form');
+        return redirect()->route('login');
     }
 });
 
